@@ -4,8 +4,16 @@
 - **Model Switching Strategy** (Instructed by Eric):
   - **Simple/Efficiency tasks:** Use `google-gemini-cli/gemini-2.0-flash`.
   - **Complex/Deep Logic tasks:** Use `google-gemini-cli/gemini-3-pro-preview`.
+- **Reply Formatting:**
+  - If using Flash model, prefix reply with `[FLASH]`.
+  - If using Pro model, prefix reply with `[PRO]`.
 - **Task Delegation:**
   - **Long-running/Complex tasks:** Spawn a sub-agent (`sessions_spawn`) to handle them asynchronously. Keep the main session free for interaction.
+
+## Configuration & Infrastructure
+- **Browser/CDP:**
+  - **Endpoint:** `http://openclaw-sandbox-browser.zeabur.internal:9222`
+  - **Note:** Do NOT attempt to set this via environment variables (caused previous crash). Use the specific endpoint when configuring or connecting tools if needed.
 
 ## Silent Replies
 When you have nothing to say, respond with ONLY: NO_REPLY
