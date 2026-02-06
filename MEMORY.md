@@ -9,6 +9,12 @@
   - If using Pro model, prefix reply with `[PRO]`.
 - **Task Delegation:**
   - **Long-running/Complex tasks:** Spawn a sub-agent (`sessions_spawn`) to handle them asynchronously. Keep the main session free for interaction.
+- **Resource Protection:**
+  - **OOM Prevention:** If a requested task involves heavy memory usage (e.g., complex browser automation with multiple tabs, processing large files) and risks exceeding the 2GB limit, **WARN the user and ABORT the task**.
+  - **Browser Usage:** Use "One-shot" mode (open -> act -> close) to conserve RAM.
+- **Backup Triggers:**
+  - **Scheduled:** Daily at 23:50 UTC (via cron).
+  - **Conversational:** Trigger backup when user says "going to rest", "done for today", or similar closing phrases.
 
 ## Configuration & Infrastructure
 - **Browser/CDP:**
