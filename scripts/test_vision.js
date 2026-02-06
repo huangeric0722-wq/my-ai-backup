@@ -26,13 +26,7 @@ function getVersion() {
   try {
     const version = await getVersion();
     let wsUrl = version.webSocketDebuggerUrl;
-    console.log('Original WS URL:', wsUrl);
-
-    // Fix the WS URL to use the correct hostname instead of 127.0.0.1 or whatever the container thinks it is
-    // The original might be like ws://127.0.0.1:9222/... or ws://something/...
-    // We want ws://openclaw-sandbox-browser.zeabur.internal:9222/...
     
-    // Simple replacement: replace the host:port part
     const wsEndpointPath = wsUrl.split('/devtools/')[1];
     const finalWsUrl = `ws://${browserHost}:${browserPort}/devtools/${wsEndpointPath}`;
     
@@ -46,7 +40,12 @@ function getVersion() {
     await page.setViewport({ width: 1280, height: 720 });
     
     console.log('Navigating to Yahoo TW...');
-    await page.goto('https://www.yahoo.com.tw', { waitUntil: 'networkidle2', timeout: 30000 });
+    try {
+        // Reduced timeout, wait until domcontentloaded (faster than networkidle2)
+        await page.goto('https://www.yahoo.com.tw', { waitUntil: 'domcontentloaded', timeout: 15000 });
+    } catch (e) {
+        console.log('Navigation timeout or error (continuing to screenshot anyway):', e.message);
+    }
     
     console.log('Taking screenshot...');
     await page.screenshot({ path: 'yahoo_tw.png' });
