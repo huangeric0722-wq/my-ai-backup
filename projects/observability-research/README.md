@@ -8,8 +8,8 @@
 | :--- | :--- | :--- | :---: | :--- | :--- |
 | **Phase 1** | ISSUE_01 | Log Schema 規範定義 | ✅ 已完成 | [PRO] | [查看報告](./Phase_1_基礎建設/ISSUE_01_Log_Schema.md) |
 | | ISSUE_02 | ELK Stack 優化策略 | ✅ 已完成 | [PRO] | [查看報告](./Phase_1_基礎建設/ISSUE_02_ELK_Optimization.md) |
-| | ISSUE_03 | APM 採樣策略研究 | ⏳ 進行中 | [PRO] | |
-| | ISSUE_04 | Metrics 警報與動態閾值 | ⏳ 待處理 | | |
+| | ISSUE_03 | APM 採樣策略研究 | ✅ 已完成 | [PRO] | [查看報告](./Phase_1_基礎建設/ISSUE_03_APM_Sampling.md) |
+| | ISSUE_04 | Metrics 警報與動態閾值 | ⏳ 進行中 | [PRO] | |
 | | ISSUE_05 | 環境隔離下的 Log 傳輸 | ⏳ 待處理 | | |
 | **Phase 2** | ISSUE_06 | Serilog .NET 整合最佳實踐 | ⏳ 待處理 | | |
 | | ISSUE_07 | LogContext 自動注入 (Enrichment) | ⏳ 待處理 | | |
@@ -18,4 +18,4 @@
 | | ISSUE_10 | UiPath 自定義 Serilog 整合 | ⏳ 待處理 | | |
 
 ---
-*最後更新時間：2026-02-07 16:16 UTC (Taiwan Time: 2026-02-08 00:16)*
+*最後更新時間：2026-02-07 16:17 UTC (Taiwan Time: 2026-02-08 00:17)*
