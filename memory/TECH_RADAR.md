@@ -15,6 +15,8 @@
 ## 🟡 Assess (評估/觀察)
 > 有潛力但還需更多研究，或目前風險較高。
 
+*   **Monty (Pydantic)**: Rust-based Python interpreter for Agents. 解決 Agent 執行程式碼的安全性與冷啟動問題。
+*   **LiteBox (Microsoft)**: Library OS for Sandboxing. 適合高安全性/隔離需求的架構。
 *   **OpenCiv3**: 開源重製版遊戲引擎 (參考其架構模式)。
 
 ## 🔴 Hold (暫緩/不推薦)

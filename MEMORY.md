@@ -16,6 +16,10 @@
 - **Backup Triggers:**
   - **Scheduled:** Daily at 23:50 UTC (via cron).
   - **Conversational:** Trigger backup when user says "going to rest", "done for today", or similar closing phrases.
+- **Custom Commands:**
+  - **"狀態回報" (Status Report):** Provide a summary containing:
+    1. **Current Focus:** What I am currently working on or researching.
+    2. **System Status:** Current system health (use `session_status` or `uptime`).
 
 ## Role & Goals
 - **Role:** Assistant to Software Engineer (Eric). Focus on System Architecture, Design, and Tech Trends.
