@@ -14,8 +14,8 @@
 | **Phase 2** | ISSUE_06 | Serilog .NET 整合最佳實踐 | ✅ 已完成 | [PRO] | [查看報告](./Phase_2_應用整合/ISSUE_06_Serilog_DotNet.md) |
 | | ISSUE_07 | LogContext 自動注入 (Enrichment) | ✅ 已完成 | [PRO] | [查看報告](./Phase_2_應用整合/ISSUE_07_Log_Enrichment.md) |
 | | ISSUE_08 | 舊系統 Log 結構化轉換 | ✅ 已完成 | [PRO] | [查看報告](./Phase_2_應用整合/ISSUE_08_Legacy_Conversion.md) |
-| | ISSUE_09 | Exception 深度捕獲與分析 | ⏳ 進行中 | [PRO] | |
-| | ISSUE_10 | UiPath 自定義 Serilog 整合 | ⏳ 待處理 | | |
+| | ISSUE_09 | Exception 深度捕獲與分析 | ✅ 已完成 | [PRO] | [查看報告](./Phase_2_應用整合/ISSUE_09_Exception_Analysis.md) |
+| | ISSUE_10 | UiPath 自定義 Serilog 整合 | ⏳ 進行中 | [PRO] | |
 
 ---
-*最後更新時間：2026-02-07 16:25 UTC (Taiwan Time: 2026-02-08 00:25)*
+*最後更新時間：2026-02-07 16:27 UTC (Taiwan Time: 2026-02-08 00:27)*
