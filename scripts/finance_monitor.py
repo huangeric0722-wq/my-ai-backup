@@ -8,7 +8,10 @@ def get_stock_advice(stock_id, current_price):
         "2431": 15.0
     }
     
-    if stock_id not in support_levels:
+    # 檢查是否為週末 (UTC 時間)
+    from datetime import datetime
+    now = datetime.utcnow()
+    if now.weekday() >= 5: # 5: Saturday, 6: Sunday
         return None
     
     support = support_levels[stock_id]
