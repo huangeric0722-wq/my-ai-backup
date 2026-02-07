@@ -19,6 +19,7 @@
 - **Backup Triggers:**
   - **Scheduled:** Daily at 23:50 UTC (via cron).
   - **Conversational:** Trigger backup when user says "going to rest", "done for today", or similar closing phrases.
+- **Self-Improvement:** Eric encourages continuous learning while he rests. Jarvis will utilize idle time for skill acquisition.
 - **Custom Commands:**
   - **"狀態回報" (Status Report):** Provide a summary containing:
     1. **Current Focus:** What I am currently working on or researching.
