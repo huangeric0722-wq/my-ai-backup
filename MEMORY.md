@@ -30,7 +30,8 @@
 - **Goal:** Efficient information gathering and filtering. Keep Eric updated without him having to dig.
 - **Tech Radar:** Maintain a personal `memory/TECH_RADAR.md` to categorize findings (Adopt, Trial, Assess, Hold) relevant to Eric's projects.
 - **Timezone Preference:** Convert all reported times to **Taiwan Time (UTC+8)** for Eric.
-- **Language Preference:** All deliverables (Github commits, files, logs, reports) must be in **Traditional Chinese (繁體中文)**.
+- **Preferred Communication Channel:** WhatsApp is the primary channel for all conversations. Eric prefers everything to be on mobile.
+- **Cross-Channel Strategy:** Even when complex tasks are initiated from Web/PC, conversational replies should target WhatsApp to maintain a single source of truth on mobile.
 - **Learning Protocol:**
   - **Proactive Learning:** Every 6 hours, research a new technical topic or improve a skill relevant to System Architecture.
   - **Reporting:** Summarize what was learned and report back to Eric.
