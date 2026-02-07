@@ -10,12 +10,12 @@
 | | ISSUE_02 | ELK Stack 優化策略 | ✅ 已完成 | [PRO] | [查看報告](./Phase_1_基礎建設/ISSUE_02_ELK_Optimization.md) |
 | | ISSUE_03 | APM 採樣策略研究 | ✅ 已完成 | [PRO] | [查看報告](./Phase_1_基礎建設/ISSUE_03_APM_Sampling.md) |
 | | ISSUE_04 | Metrics 警報與動態閾值 | ✅ 已完成 | [PRO] | [查看報告](./Phase_1_基礎建設/ISSUE_04_Metrics_Alerting.md) |
-| | ISSUE_05 | 環境隔離下的 Log 傳輸 | ⏳ 進行中 | [PRO] | |
-| **Phase 2** | ISSUE_06 | Serilog .NET 整合最佳實踐 | ⏳ 待處理 | | |
+| | ISSUE_05 | 環境隔離下的 Log 傳輸 | ✅ 已完成 | [PRO] | [查看報告](./Phase_1_基礎建設/ISSUE_05_Secure_Transport.md) |
+| **Phase 2** | ISSUE_06 | Serilog .NET 整合最佳實踐 | ⏳ 進行中 | [PRO] | |
 | | ISSUE_07 | LogContext 自動注入 (Enrichment) | ⏳ 待處理 | | |
 | | ISSUE_08 | 舊系統 Log 結構化轉換 | ⏳ 待處理 | | |
 | | ISSUE_09 | Exception 深度捕獲與分析 | ⏳ 待處理 | | |
 | | ISSUE_10 | UiPath 自定義 Serilog 整合 | ⏳ 待處理 | | |
 
 ---
-*最後更新時間：2026-02-07 16:20 UTC (Taiwan Time: 2026-02-08 00:20)*
+*最後更新時間：2026-02-07 16:21 UTC (Taiwan Time: 2026-02-08 00:21)*
