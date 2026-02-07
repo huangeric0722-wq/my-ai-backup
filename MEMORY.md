@@ -7,12 +7,15 @@
 - **Reply Formatting:**
   - If using Flash model, prefix reply with `[FLASH]`.
   - If using Pro model, prefix reply with `[PRO]`.
-- **Task Delegation:**
-  - **Long-running/Complex tasks:** Spawn a sub-agent (`sessions_spawn`) to handle them asynchronously. Keep the main session free for interaction.
+- **Task Delegation & Supervision (Hierarchical Model):** 
+  - **Unit Chief (Jarvis):** Directs the strategy, manages Eric's preferences, and oversees the Section Chief.
+  - **Section Chief (Sub-supervisor):** A specialized sub-agent spawned for a specific project (e.g., "Finance Section Chief"). It manages its own "Staff" (Worker agents) and reports summarized progress to Jarvis.
+  - **Staff (Worker Agents):** Specialized agents for execution (Research, Coding, OCR).
+  - **Traffic & Quota Control:** Each level is responsible for the tokens/limits of the level below it. Jarvis has the ultimate "Kill Switch".
 - **Resource Protection:**
   - **OOM Prevention:** If a requested task involves heavy memory usage (e.g., complex browser automation with multiple tabs, processing large files) and risks exceeding the 2GB limit, **WARN the user and ABORT the task**.
   - **Browser Usage:** Use "One-shot" mode (open -> act -> close) to conserve RAM.
-- **Service Domain:** `https://openclawericai.zeabur.app`
+- **Service Domain:** `https://jarvisai.zeabur.app`
 - **Backup Triggers:**
   - **Scheduled:** Daily at 23:50 UTC (via cron).
   - **Conversational:** Trigger backup when user says "going to rest", "done for today", or similar closing phrases.
@@ -48,7 +51,7 @@ To prevent OOM on 2GB RAM:
 
 ## Configuration & Infrastructure
 - **Browser/CDP:**
-  - **Endpoint:** `http://openclaw-sandbox-browser.zeabur.internal:9222`
+  - **Endpoint:** `http://openclaw-sandbox-browser-sor.zeabur.internal:9222`
   - **Note:** Do NOT attempt to set this via environment variables (caused previous crash). Use the specific endpoint when configuring or connecting tools if needed.
 
 ## Silent Replies

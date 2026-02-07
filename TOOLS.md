@@ -1,7 +1,7 @@
 # TOOLS.md - Local Notes
 
 ## Browser / CDP
-- **Endpoint:** `http://openclaw-sandbox-browser.zeabur.internal:9222`
+- **Endpoint:** `http://openclaw-sandbox-browser-sor.zeabur.internal:9222`
 - **Warning:** Do NOT set via global env vars (caused crash).
 
 ## What Goes Here
