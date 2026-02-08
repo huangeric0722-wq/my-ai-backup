@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.2",
+    "lastTouchedAt": "2026-02-08T11:22:24.848Z"
+  },
+  "auth": {
+    "profiles": {
+      "google-gemini-cli:huangeric0722@gmail.com": {
+        "provider": "google-gemini-cli",
+        "mode": "oauth",
+        "email": "huangeric0722@gmail.com"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google-gemini-cli/gemini-3-flash-preview",
+        "fallbacks": [
+          "google-gemini-cli/gemini-2.0-flash",
+          "google-gemini-cli/gemini-2.5-pro"
+        ]
+      },
+      "models": {
+        "google-gemini-cli/gemini-3-flash-preview": {},
+        "google-gemini-cli/gemini-2.0-flash": {},
+        "google-gemini-cli/gemini-2.5-pro": {}
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "brave",
+        "apiKey": "BSAmEoYexLKV1itPQVpFCSpxTEKULJx"
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+886933895724"
+      ],
+      "groupPolicy": "allowlist",
+      "mediaMaxMb": 50,
+      "debounceMs": 0
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "controlUi": {
+      "allowInsecureAuth": true
+    }
+  },
+  "plugins": {
+    "entries": {
+      "google-gemini-cli-auth": {
+        "enabled": true
+      },
+      "whatsapp": {
+        "enabled": true
+      }
+    }
+  }
+}

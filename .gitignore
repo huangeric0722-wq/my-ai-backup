@@ -6,8 +6,8 @@ memory/MAIL_CONFIG.txt
 backup/**/GOOGLE_CALENDAR_CREDENTIALS.txt
 backup/**/GOOGLE_CALENDAR_TOKEN.json
 backup/**/MAIL_CONFIG.txt
-project/tools/exchange_token.py
-project/tools/exchange_token_std.py
-project/tools/gen_calendar_auth.py
-project/tools/manual_calendar_auth.py
-openclaw.json
+projects/tools/exchange_token.py
+projects/tools/exchange_token_std.py
+projects/tools/gen_calendar_auth.py
+projects/tools/manual_calendar_auth.py
+backup/
