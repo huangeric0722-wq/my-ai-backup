@@ -16,9 +16,13 @@
 - **OpenClaw `message` tool**: 跨平台通知發送。
 - **Cron**: 定時執行投資追蹤腳本。
 
-## 4. 研究筆記 (2026-02-07)
-- 發現 MCP 生態目前較多基礎設施類 (Git, Filesystem)，財務專用工具尚待整合。
-- 專款專用分配可透過設定「帳戶映射表」結合 LLM 處理。
-- **[新發現] UiPath CLI 23.4+ 增強分析技能**：研究了 `uipcli` 的 `scan` 指令，可用於在部署前進行靜態代碼分析 (Workflow Analysis)，這對 Eric 公司這種對安全性要求高的環境非常實用，可以自動檢查硬編碼密碼或未處理的異常。
-- **[新專案] 系統觀測性深度研究 (Observability Research)**：啟動 Eric 規劃的觀測性架構實作研究。已建立 `/projects/observability-research/` 目錄並初始化 `README.md` 進度儀表板。
-- **[進修目標] 階段性產出**：將針對 10 個核心 Issue 逐一使用 [PRO] 模型進行深度研究，產出包含架構圖說明、PoC 程式碼與 Eric 專屬建議的報告。
+## 4. 研究筆記 (2026-02-08)
+- **[當前進修計畫]**：
+    1. **觀測性研究：第三階段攻堅**：鑽研全鏈路追蹤 (Trace Analysis) 與 OpenTelemetry 實作。
+    2. **財務自動化：從理論到實作**：改寫 `scripts/finance_monitor.py`，導入實質的 Pandas 分類邏輯。
+    3. **MCP 工具開發特訓**：研究自定義 MCP 伺服器架構，提升數據存取安全性與速度。
+    4. **技術雷達掃描**：追蹤華邦電、南亞科週末財報與市場趨勢。
+- **[2026-02-08 成果] 階段性進展**：
+    - 更新 `memory/FINANCE_LEDGER.csv`，新增測試數據並模擬分類。
+    - 複習了 `memory/UIPATH_SECURITY_CHECKLIST.md` 確保符合 Eric 的環境需求。
+    - 已初步梳理 OpenTelemetry 的四大信號，準備產出 Phase 3 的首份報告。

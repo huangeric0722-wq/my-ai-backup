@@ -17,7 +17,7 @@ def get_stock_advice(stock_id, current_price):
     support = support_levels[stock_id]
     gap = ((current_price - support) / support) * 100
     
-    if gap <= 5: # 擴大警戒範圍到 5%
+    if gap <= 5: # 恢復原來的 5% 警戒範圍
         return f"🚨 *投資警戒* 🚨\n標的：{stock_id}\n現價：{current_price}\n支撐：{support}\n差距：{round(gap, 2)}%\n建議：已接近底部，請留意佈局時機！"
     return None
 

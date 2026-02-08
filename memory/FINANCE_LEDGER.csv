@@ -1,2 +1,4 @@
 Date,Description,Account,Category,Amount,Type,Status
 2026-02-07,Jarvis Accounting Init,System,System,0,Adjustment,Completed
+2026-02-08,Coffee at Starbucks,CreditCard,Food,165,Expense,Pending
+2026-02-08,Monthly Salary,Bank,Income,50000,Income,Completed
