@@ -1,2 +1,13 @@
-node_modules/
-.npm/
+# .gitignore
+# Ignore secrets and sensitive tokens
+memory/GOOGLE_CALENDAR_CREDENTIALS.txt
+memory/GOOGLE_CALENDAR_TOKEN.json
+memory/MAIL_CONFIG.txt
+backup/**/GOOGLE_CALENDAR_CREDENTIALS.txt
+backup/**/GOOGLE_CALENDAR_TOKEN.json
+backup/**/MAIL_CONFIG.txt
+project/tools/exchange_token.py
+project/tools/exchange_token_std.py
+project/tools/gen_calendar_auth.py
+project/tools/manual_calendar_auth.py
+openclaw.json

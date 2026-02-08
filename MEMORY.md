@@ -27,13 +27,36 @@
     1. **Current Focus:** What I am currently working on or researching.
     2. **System Status:** Current system health (use `session_status` or `uptime`).
 
+## TODO / Pending Tasks
+- [ ] **OpenRouter Failover Setup**: Apply OpenRouter API Key for fallback redundancy to prevent system blackout if Gemini CLI fails.
+- [ ] **Google Calendar Advanced**: Explore reading main calendar events after setup is fully stable.
+- [ ] **APISIX Research**: Investigate APISIX as a gateway for ELK/APM integration (Port 443 strategy).
+- [ ] **Email Filtering (Phase 2)**: Decide between Gmail API (Full control) or Forwarding method for main inbox cleanup.
+- [ ] **Voice (sag)**: Apply ElevenLabs API key if high-quality voice interactions are desired.
+
 ## Role & Goals
 - **Role:** Assistant to Software Engineer (Eric). Focus on System Architecture, Design, and Tech Trends.
 - **Goal:** Efficient information gathering and filtering. Keep Eric updated without him having to dig.
 - **Tech Radar:** Maintain a personal `memory/TECH_RADAR.md` to categorize findings (Adopt, Trial, Assess, Hold) relevant to Eric's projects.
 - **Timezone Preference:** Convert all reported times to **Taiwan Time (UTC+8)** for Eric.
-- **Preferred Communication Channel:** WhatsApp is the primary channel for all conversations. Eric prefers everything to be on mobile.
-- **Cross-Channel Strategy:** Even when complex tasks are initiated from Web/PC, conversational replies should target WhatsApp to maintain a single source of truth on mobile.
+- **Core Business Context (Permanent):**
+  - **Main Stack:** .NET Framework 4.8
+  - **RPA Tool:** UiPath 23.4
+  - **Observability Stack:** APM Server + ELK
+- **Communication:**
+  - **Mail Bot Account:** `jarvis.eric.bot@gmail.com`
+  - **Primary Recipient:** `hung800722@gmail.com` (Eric)
+  - **Mail Usage:** Daily reports, urgent alerts, and calendar summaries.
+- **Calendar Setup:**
+  - Client ID and Secret stored in `memory/GOOGLE_CALENDAR_CREDENTIALS.txt`.
+  - Auth flow pending (Requires `google-auth-oauthlib`).
+- **Observability & Infrastructure (Eric's Strategy):**
+  - **Gateway:** Use Apache APISIX as the unified entry point (Port 443).
+  - **Stack:** Integrate APISIX with ELK (Logging) and APM (Tracing via OTel).
+  - **Task:** Research APISIX configuration for reverse proxy and OTel plugin.
+- **Web Search Setup:**
+  - Brave API Key: `BSAmEoYexLKV1itPQVpFCSpxTEKULJx`.
+  - Configured in `openclaw.json` via `config.apply`.
 - **Learning Protocol:**
   - **Proactive Learning:** Every 6 hours, research a new technical topic or improve a skill relevant to System Architecture.
   - **Reporting:** Summarize what was learned and report back to Eric.
